@@ -5,9 +5,7 @@
 #
 # Author: Brad Cable
 # Email: brad@bcable.net
-# License: Modified BSD
-# License Details:
-# http://bcable.net/license.php
+# License: GPLv2
 #
 
 
