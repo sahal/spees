@@ -4,22 +4,22 @@ Surrogafier v1.9.0b Documentation
 Table of Contents
 -----------------
 
-  Introduction
+    Introduction
 
-  I: How to Operate this Application
-    I.a: Installation
+    I: How to Operate this Application
+      I.a: Installation
 
-    I.b: Server Side Configuration
-     I.b.i:     Basic Config
-     I.b.ii:    Advanced Config
-     I.b.iii:   Labels
-     I.b.iv:    Style
-      I.b.iv.a: STYLE_URL_FORM
-      I.b.iv.b: STYLE
+      I.b: Server Side Configuration
+       I.b.i:     Basic Config
+       I.b.ii:    Advanced Config
+       I.b.iii:   Labels
+       I.b.iv:    Style
+        I.b.iv.a: STYLE_URL_FORM
+        I.b.iv.b: STYLE
 
-    I.c: Using Surrogafier
+      I.c: Using Surrogafier
 
-    I.d: But Wait...
+      I.d: But Wait...
 
 
 Introduction
@@ -59,134 +59,134 @@ file is 'index.php.conf'.  A good way to start is to copy the proxy over and del
 I.b.i: Basic Config
 -------------------
 
-  DEFAULT_SIMPLE                - Default to simple mode when the page is
-                                  loaded.
-                                  (default value: false)
+    DEFAULT_SIMPLE                - Default to simple mode when the page is
+                                    loaded.
+                                    (default value: false)
 
-  FORCE_SIMPLE                  - Force the page to always be in simple mode
-                                  (no advanced mode option).
-                                  (default value: false)
+    FORCE_SIMPLE                  - Force the page to always be in simple mode
+                                    (no advanced mode option).
+                                    (default value: false)
 
-  SIMPLE_MODE_URLWIDTH          - Width for the URL box when in simple mode
-                                  (CSS "width" attribute).
-                                  (default value: 300px)
+    SIMPLE_MODE_URLWIDTH          - Width for the URL box when in simple mode
+                                    (CSS "width" attribute).
+                                    (default value: 300px)
 
-  DISABLE_POST_COOKIES          - Disables POST and COOKIES for a much leaner
-                                  script, at the expense of functionality.
-                                  (default value: false)
+    DISABLE_POST_COOKIES          - Disables POST and COOKIES for a much leaner
+                                    script, at the expense of functionality.
+                                    (default value: false)
 
-  INCLUDE_MAIN_HEADER           - Header file to include for the proxy main
-                                  page.
-                                  (default value: null string)
+    INCLUDE_MAIN_HEADER           - Header file to include for the proxy main
+                                    page.
+                                    (default value: null string)
 
-  INCLUDE_MAIN_FOOTER           - Footer file to include for the proxy main
-                                  page.
-                                  (default value: null string)
+    INCLUDE_MAIN_FOOTER           - Footer file to include for the proxy main
+                                    page.
+                                    (default value: null string)
 
-  INCLUDE_URL_HEADER            - Header file to include for the proxy URL form
-                                  page.
-                                  (default value: null string)
+    INCLUDE_URL_HEADER            - Header file to include for the proxy URL form
+                                    page.
+                                    (default value: null string)
 
-  DEFAULT_TUNNEL_IP             - Default value for tunnel server.
-                                  (default value: null string)
+    DEFAULT_TUNNEL_IP             - Default value for tunnel server.
+                                    (default value: null string)
 
-  DEFAULT_TUNNEL_PORT           - Default value for tunnel port.
-                                  (default value: null string)
+    DEFAULT_TUNNEL_PORT           - Default value for tunnel port.
+                                    (default value: null string)
 
-  FORCE_DEFAULT_TUNNEL          - Should the tunnel fields be displayed? "true"
-                                  value here will force the defaults above,
-                                  disallowing user input.
-                                  (default value: false)
+    FORCE_DEFAULT_TUNNEL          - Should the tunnel fields be displayed? "true"
+                                    value here will force the defaults above,
+                                    disallowing user input.
+                                    (default value: false)
 
-  DEFAULT_USER_AGENT            - Default value for User-Agent.
-                                  (default value: null string)
+    DEFAULT_USER_AGENT            - Default value for User-Agent.
+                                    (default value: null string)
 
-  FORCE_DEFAULT_USER_AGENT      - Force the default value of the user agent
-                                  field, and disallow user input.
-                                  (default value: false)
+    FORCE_DEFAULT_USER_AGENT      - Force the default value of the user agent
+                                    field, and disallow user input.
+                                    (default value: false)
 
-  DEFAULT_URL_FORM              - Default value for "Persistent URL" checkbox.
-                                  (default value: true)
+    DEFAULT_URL_FORM              - Default value for "Persistent URL" checkbox.
+                                    (default value: true)
 
-  FORCE_DEFAULT_URL_FORM        - Force the default value of the
-                                  "Persistent URL" field, and disallow user
-                                  input.
-                                  (default value: false)
+    FORCE_DEFAULT_URL_FORM        - Force the default value of the
+                                    "Persistent URL" field, and disallow user
+                                    input.
+                                    (default value: false)
 
-  DEFAULT_REMOVE_COOKIES        - Default value for "Remove Cookies" checkbox.
-                                  (default value: false)
+    DEFAULT_REMOVE_COOKIES        - Default value for "Remove Cookies" checkbox.
+                                    (default value: false)
 
-  FORCE_DEFAULT_REMOVE_COOKIES  - Force the default value of the
-                                  "Remove Cookies" field, and disallow user
-                                  input.
-                                  (default value: false)
+    FORCE_DEFAULT_REMOVE_COOKIES  - Force the default value of the
+                                    "Remove Cookies" field, and disallow user
+                                    input.
+                                    (default value: false)
 
-  DEFAULT_REMOVE_REFERER        - Default value for "Remove Referer Field"
-                                  checkbox.
-                                  (default value: false)
+    DEFAULT_REMOVE_REFERER        - Default value for "Remove Referer Field"
+                                    checkbox.
+                                    (default value: false)
 
-  FORCE_DEFAULT_REMOVE_REFERER  - Force the default value of the
-                                  "Remove Referer Field" field, and disallow
-                                  user input.
-                                  (default value: false)
+    FORCE_DEFAULT_REMOVE_REFERER  - Force the default value of the
+                                    "Remove Referer Field" field, and disallow
+                                    user input.
+                                    (default value: false)
 
-  DEFAULT_REMOVE_SCRIPTS        - Default value for "Remove Scripts" checkbox.
-                                  (default value: false)
+    DEFAULT_REMOVE_SCRIPTS        - Default value for "Remove Scripts" checkbox.
+                                    (default value: false)
 
-  FORCE_DEFAULT_REMOVE_SCRIPTS  - Force the default value of the
-                                  "Remove Scripts" field, and disallow user
-                                  input.
-                                  (default value: false)
+    FORCE_DEFAULT_REMOVE_SCRIPTS  - Force the default value of the
+                                    "Remove Scripts" field, and disallow user
+                                    input.
+                                    (default value: false)
 
-  DEFAULT_REMOVE_OBJECTS        - Default value for "Remove Objects" checkbox.
-                                  (default value: false)
+    DEFAULT_REMOVE_OBJECTS        - Default value for "Remove Objects" checkbox.
+                                    (default value: false)
 
-  FORCE_DEFAULT_REMOVE_OBJECTS  - Force the default value of the
-                                  "Remove Objects" field, and disallow user
-                                  input.
-                                  (default value: false)
+    FORCE_DEFAULT_REMOVE_OBJECTS  - Force the default value of the
+                                    "Remove Objects" field, and disallow user
+                                    input.
+                                    (default value: false)
 
-  DEFAULT_ENCRYPT_URLS          - Default value for "Encrypt URLs" checkbox.
-                                  (default value: false)
+    DEFAULT_ENCRYPT_URLS          - Default value for "Encrypt URLs" checkbox.
+                                    (default value: false)
 
-  FORCE_DEFAULT_ENCRYPT_URLS    - Force the default value of the "Encrypt URLs"
-                                  field, and disallow user input.
-                                  (default value: false)
+    FORCE_DEFAULT_ENCRYPT_URLS    - Force the default value of the "Encrypt URLs"
+                                    field, and disallow user input.
+                                    (default value: false)
 
-  DEFAULT_ENCRYPT_COOKIES       - Default value for "Encrypt Cookies" checkbox.
-                                  (default value: false)
+    DEFAULT_ENCRYPT_COOKIES       - Default value for "Encrypt Cookies" checkbox.
+                                    (default value: false)
 
-  FORCE_DEFAULT_ENCRYPT_COOKIES - Force the default value of the
-                                  "Encrypt Cookies" field, and disallow user
-                                  input.
-                                  (default value: false)
+    FORCE_DEFAULT_ENCRYPT_COOKIES - Force the default value of the
+                                    "Encrypt Cookies" field, and disallow user
+                                    input.
+                                    (default value: false)
 
-  DEFAULT_ENCODE_HTML           - Default value for "Encode HTML" checkbox.
-                                  (default value: false)
+    DEFAULT_ENCODE_HTML           - Default value for "Encode HTML" checkbox.
+                                    (default value: false)
 
-  FORCE_DEFAULT_ENCODE_HTML     - Force the default value of the
-                                  "Encode HTML" field, and disallow user
-                                  input.
-                                  (default value: false)
+    FORCE_DEFAULT_ENCODE_HTML     - Force the default value of the
+                                    "Encode HTML" field, and disallow user
+                                    input.
+                                    (default value: false)
 
-  BLOCKED_ADDRESSES      - Formats for address blocking are as follows:
-                             1.2.3.4     - plain IP address
-                             1.0.0.0/16  - subnet blocking
-                             1.0/16      - subnet blocking
-                             1/8         - subnet blocking
-                             php.net     - domain blocking
+    BLOCKED_ADDRESSES      - Formats for address blocking are as follows:
+                               1.2.3.4     - plain IP address
+                               1.0.0.0/16  - subnet blocking
+                               1.0/16      - subnet blocking
+                               1/8         - subnet blocking
+                               php.net     - domain blocking
 
-                           The default blocked addresses are:
-                             '10/8','172/8','192.168/16','127/8','169.254/16'
+                             The default blocked addresses are:
+                               '10/8','172/8','192.168/16','127/8','169.254/16'
 
-                           These are blocked by default since they are reserved
-                           for local and internal purposes.  If I have missed
-                           some, or if I have one of these mistaken, please
-                           email me.
+                             These are blocked by default since they are reserved
+                             for local and internal purposes.  If I have missed
+                             some, or if I have one of these mistaken, please
+                             email me.
 
-                           For information on the format of arrays in PHP,
-                           please visit:
-                           http://www.php.net/manual/en/function.array.php
+                             For information on the format of arrays in PHP,
+                             please visit:
+                             http://www.php.net/manual/en/function.array.php
 
 
 I.b.ii: Advanced Config
@@ -197,94 +197,95 @@ the internals of the script actually function.
 
 ONLY EDIT THIS STUFF IF YOU REALLY KNOW WHAT YOU ARE DOING!
 
-  MAXIMUM_URL_LENGTH - 500 is the most reasonable number I could come up with
-                       as a maximum URL length limit.  I ran into a 1200+
-                       character long URL once and it nearly melted the
-                       processor on my laptop trying to parse it.  Honestly,
-                       who needs this long of a URL anyway?
-                       (default value: 500)
+    MAXIMUM_URL_LENGTH - 500 is the most reasonable number I could come up with
+                         as a maximum URL length limit.  I ran into a 1200+
+                         character long URL once and it nearly melted the
+                         processor on my laptop trying to parse it.  Honestly,
+                         who needs this long of a URL anyway?
+                         (default value: 500)
 
-  TIME_LIMIT         - Time limit in seconds for a single request and parse.
-                       (default value: 30)
+    TIME_LIMIT         - Time limit in seconds for a single request and parse.
+                         (default value: 30)
 
-  DNS_CACHE_EXPIRE   - Time limit in minutes for a DNS entry to be kept in the
-                       cache.
-                       (default value: 10)
+    DNS_CACHE_EXPIRE   - Time limit in minutes for a DNS entry to be kept in the
+                         cache.
+                         (default value: 10)
 
-  MEMORY_LIMIT       - Maximum memory usage, as specified by memory_limit in
-                       php.ini.
-                       (default value: '16M')
+    MEMORY_LIMIT       - Maximum memory usage, as specified by memory_limit in
+                         php.ini.
+                         (default value: '16M')
 
-  GZIP_PROXY_USER    - Use gzip (if possible) to compress the connection
-                       between the proxy and the user
-                       (less bandwidth, more CPU).
-                       (default value: false)
+    GZIP_PROXY_USER    - Use gzip (if possible) to compress the connection
+                         between the proxy and the user
+                         (less bandwidth, more CPU).
+                         (default value: false)
 
-  GZIP_PROXY_SERVER  - Use gzip (if possible) to compress the connection
-                       between the proxy and the server
-                       (less bandwidth, more CPU).
-                       (default value: false)
+    GZIP_PROXY_SERVER  - Use gzip (if possible) to compress the connection
+                         between the proxy and the server
+                         (less bandwidth, more CPU).
+                         (default value: false)
 
-  PROTO              - Protocol that proxy is running on.  Uncomment this line
-                       to define it manually.  If you leave this line
-                       commented, the code detects if you are running on an
-                       HTTPS connection.  If you are, then 'https' is used as
-                       the PROTO value, otherwise 'http' is used.  If you need
-                       a different value here, then define it.
-                       (default value: undefined)
+    PROTO              - Protocol that proxy is running on.  Uncomment this line
+                         to define it manually.  If you leave this line
+                         commented, the code detects if you are running on an
+                         HTTPS connection.  If you are, then 'https' is used as
+                         the PROTO value, otherwise 'http' is used.  If you need
+                         a different value here, then define it.
+                         (default value: undefined)
 
-  SSL_WARNING_IGNORE_FILETYPES - ignored filetypes for SSL check
-    (default values:'.css', '.js', '.gif', '.jpeg', '.jpg', '.png', '.bmp')
+    SSL_WARNING_IGNORE_FILETYPES - ignored filetypes for SSL check
+      (default values:'.css', '.js', '.gif', '.jpeg', '.jpg', '.png', '.bmp')
 
 
 I.b.iii: Labels
+---------------
 
 The following options represent labels on the main page of the proxy.  By
 changing these values you can modify the display into anything you want.
 
-  TITLE             - title text above form
-                      (default value: 'Surrogafier')
+    TITLE             - title text above form
+                        (default value: 'Surrogafier')
 
-  URL               - text for URL text field
-                      (default value: 'URL:')
+    URL               - text for URL text field
+                        (default value: 'URL:')
 
-  TUNNEL            - text for tunnel proxy text fields
-                      (default value: 'Tunnel Proxy:')
+    TUNNEL            - text for tunnel proxy text fields
+                        (default value: 'Tunnel Proxy:')
 
-  USER_AGENT        - text for user-agent select field
-                      (default value: 'User-Agent:')
+    USER_AGENT        - text for user-agent select field
+                        (default value: 'User-Agent:')
 
-  USER_AGENT_CUSTOM - text for user-agent custom text field
-                      (default value: null string)
+    USER_AGENT_CUSTOM - text for user-agent custom text field
+                        (default value: null string)
 
-  URL_FORM          - text for persistent URL form checkbox
-                      (default value: 'Persistent URL Form';
+    URL_FORM          - text for persistent URL form checkbox
+                        (default value: 'Persistent URL Form';
 
-  REMOVE_COOKIES    - text for remove cookies checkbox
-                      (default value: 'Remove Cookies')
+    REMOVE_COOKIES    - text for remove cookies checkbox
+                        (default value: 'Remove Cookies')
 
-  REMOVE_REFERER    - text for remove referer checkbox
-                      (default value: 'Remove Referer Field')
+    REMOVE_REFERER    - text for remove referer checkbox
+                        (default value: 'Remove Referer Field')
 
-  REMOVE_SCRIPTS    - text for remove scripts checkbox
-                      (default value: 'Remove Scripts (JS, VBS, etc)')
+    REMOVE_SCRIPTS    - text for remove scripts checkbox
+                        (default value: 'Remove Scripts (JS, VBS, etc)')
 
-  REMOVE_OBJECTS    - text for remove objects checkbox
-                      (default value: 'Remove Objects (Flash, Java, etc)')
+    REMOVE_OBJECTS    - text for remove objects checkbox
+                        (default value: 'Remove Objects (Flash, Java, etc)')
 
-  ENCRYPT_URLS      - text for encrypt URLs checkbox
-                      (default value: 'Encrypt URLs')
+    ENCRYPT_URLS      - text for encrypt URLs checkbox
+                        (default value: 'Encrypt URLs')
 
-  ENCRYPT_COOKIES   - text for encrypt cookies checkbox
-                      (default value: 'Encrypt Cookies')
+    ENCRYPT_COOKIES   - text for encrypt cookies checkbox
+                        (default value: 'Encrypt Cookies')
 
-  ENCODE_HTML       - text for encode HTML checkbox
-                      (default value: 'Encode HTML')
+    ENCODE_HTML       - text for encode HTML checkbox
+                        (default value: 'Encode HTML')
 
-  SUBMIT_MAIN       - text for the main submit button
-                      (default value: 'Surrogafy')
+    SUBMIT_MAIN       - text for the main submit button
+                        (default value: 'Surrogafy')
 
-  SUBMIT_SIMPLE     - text for the simple submit button
+    SUBMIT_SIMPLE     - text for the simple submit button
                       (default value: 'Surrogafy')
 
 
@@ -313,60 +314,60 @@ The default values for $STYLE are shown below, with default values specified.
 Some are blank, which means they are just there to give you an idea of what you
 can do, since it describes what that field is.
 
-  body - body of whole document
-    font-family: bitstream vera sans, arial;
-    margin: 0px;
-    padding: 0px;
+    body - body of whole document
+      font-family: bitstream vera sans, arial;
+      margin: 0px;
+      padding: 0px;
 
-  form#proxy_form - <form>
-    margin: 0px;
-    padding: 0px;
+    form#proxy_form - <form>
+      margin: 0px;
+      padding: 0px;
 
-  table#proxy_table - <table>
-    margin: 0px;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    table#proxy_table - <table>
+      margin: 0px;
+      padding: 0px;
+      margin-left: auto;
+      margin-right: auto;
 
-  td#proxy_title - the title text above form
-    font-weight: bold;
-    font-size: 1.4em;
-    text-align: center;
+    td#proxy_title - the title text above form
+      font-weight: bold;
+      font-size: 1.4em;
+      text-align: center;
 
-  input.proxy_text - class for all text fields
-    width: 100%;
-    border: 1px solid #000000;
+    input.proxy_text - class for all text fields
+      width: 100%;
+      border: 1px solid #000000;
 
-  select.proxy_select - class for all select fields
-    width: 100%;
-    border: 1px solid #000000;
+    select.proxy_select - class for all select fields
+      width: 100%;
+      border: 1px solid #000000;
 
-  a.proxy_link - class for all proxy defined links
-    color: #000000;
+    a.proxy_link - class for all proxy defined links
+      color: #000000;
 
-  input.proxy_submit - class for all submit buttons
-    border: 1px solid #000000;
-    background-color: #FFFFFF;
+    input.proxy_submit - class for all submit buttons
+      border: 1px solid #000000;
+      background-color: #FFFFFF;
 
-  input#proxy_submit_simple - the simple submit button
-    (empty)
+    input#proxy_submit_simple - the simple submit button
+      (empty)
 
-  input#proxy_submit_main - the main submit button
-    width: 100%;
+    input#proxy_submit_main - the main submit button
+      width: 100%;
 
-  input#proxy_tunnel_ip - the tunnel proxy ip field
-    float: left;
-    width: 73%;
+    input#proxy_tunnel_ip - the tunnel proxy ip field
+      float: left;
+      width: 73%;
 
-  input#proxy_tunnel_port - the tunnel proxy port field
-    float: right;
-    width: 23%;
+    input#proxy_tunnel_port - the tunnel proxy port field
+      float: right;
+      width: 23%;
 
-  a#proxy_link_author - the link for script information and a link to the author
-    float: left;
+    a#proxy_link_author - the link for script information and a link to the author
+      float: left;
 
-  a#proxy_link_mode - the link for toggling modes
-    float: right;
+    a#proxy_link_mode - the link for toggling modes
+      float: right;
 
 
 I.c: Using Surrogafier
@@ -384,11 +385,11 @@ I.d: But Wait...
 
 Q: ... That's it?
 A: Yeah, that's it... but just a few notes.  I have noticed a few installs of
-   Surrogafier being installed on the firewalled computer of a network, then
-   not being successful at getting around the firewall.  The idea is that you
-   put Surrogafier on a server free of filtering, then connect to that server to
-   bypass the firewall you are under.  Basically, the operators of said network
-   must not have any filtering going on, AND the server must not reside in
-   China or any other country which censors its population.  You may access a
-   server with Surrogafier installed on it while you are residing in a place
-   such as China to bypass the oppressive firewall.
+Surrogafier being installed on the firewalled computer of a network, then
+not being successful at getting around the firewall.  The idea is that you
+put Surrogafier on a server free of filtering, then connect to that server to
+bypass the firewall you are under.  Basically, the operators of said network
+must not have any filtering going on, AND the server must not reside in
+China or any other country which censors its population.  You may access a
+server with Surrogafier installed on it while you are residing in a place
+such as China to bypass the oppressive firewall.
