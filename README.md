@@ -384,6 +384,7 @@ I.d: But Wait...
 ----------------
 
 Q: ... That's it?
+
 A: Yeah, that's it... but just a few notes.  I have noticed a few installs of
 Surrogafier being installed on the firewalled computer of a network, then
 not being successful at getting around the firewall.  The idea is that you
