@@ -1,9 +1,8 @@
+Surrogafier v1.9.0b Documentation
+=================================
 
-                       Surrogafier v1.9.0b Documentation
---------------------------------------------------------------------------------
-
-    Table of Contents
-  ---------------------
+Table of Contents
+-----------------
 
   Introduction
 
@@ -22,27 +21,26 @@
 
     I.d: But Wait...
 
---------------------------------------------------------------------------------
 
-  Introduction
-----------------
+Introduction
+------------
 
 Surrogafier is a 3 tier web proxy with other various features.  The next section
 describes how to install and operate this proxy.
 
-  I. How to Operate this Application
---------------------------------------
+I. How to Operate this Application
+----------------------------------
 
-    I.a: Installation
-  ---------------------
+I.a: Installation
+-----------------
 
 Copy the PHP file into a directory that Apache  or any other PHP enabled web
 server (with PHP installed and enabled on it), then access it as you would any
 other PHP script on said server.
 
 
-    I.b: Server Side Configuration
-  ----------------------------------
+I.b: Server Side Configuration
+------------------------------
 
 If there is something you are wanting to change about the proxy, chances are
 there is a configuration option that can do it for you.  If everything is hunky
@@ -59,6 +57,7 @@ file is 'index.php.conf'.  A good way to start is to copy the proxy over and del
 
 
 I.b.i: Basic Config
+-------------------
 
   DEFAULT_SIMPLE                - Default to simple mode when the page is
                                   loaded.
@@ -191,6 +190,7 @@ I.b.i: Basic Config
 
 
 I.b.ii: Advanced Config
+-----------------------
 
 The following options alter the way documents are parsed on the page, and how
 the internals of the script actually function.
@@ -289,6 +289,7 @@ changing these values you can modify the display into anything you want.
 
 
 I.b.iv: Style
+-------------
 
 The $STYLE configuration variable can be used to override CSS for the main page
 of Surrogafier.  Likewise, the $STYLE_URL_FORM configuration variable can be
@@ -299,12 +300,14 @@ as you'd like.
 
 
 I.b.iv.a: STYLE_URL_FORM
+------------------------
 
 The default value for $STYLE_URL_FORM is to be completely blank.  Add entries as
 you please.
 
 
 I.b.iv.b: STYLE
+---------------
 
 The default values for $STYLE are shown below, with default values specified.
 Some are blank, which means they are just there to give you an idea of what you
@@ -366,8 +369,8 @@ can do, since it describes what that field is.
     float: right;
 
 
-    I.c: Using Surrogafier
-  --------------------------
+I.c: Using Surrogafier
+----------------------
 
 To use the script, just enter the URL you want to send through the proxy, enter
 in a proxy ip/port if you wish, and change all the other options to fit your
@@ -376,8 +379,8 @@ proxy, but if a site does not work, please report it in the Surrogafier "Bugs"
 forum, or email me at brad@bcable.net.
 
 
-    I.d: But Wait...
-  --------------------
+I.d: But Wait...
+----------------
 
 Q: ... That's it?
 A: Yeah, that's it... but just a few notes.  I have noticed a few installs of
